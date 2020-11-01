@@ -1,0 +1,83 @@
+{
+  "name": "dc3-web",
+  "version": "3.0.0",
+  "private": true,
+  "author": "pnoker",
+  "description": "IOT DC3 UI",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@antv/g2": "^4.0.12",
+    "@antv/l7": "2.2.19",
+    "@antv/l7-maps": "2.2.19",
+    "@smallwei/avue": "^2.5.3",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "insert-css": "^2.0.0",
+    "js-base64": "latest",
+    "js-cookie": "latest",
+    "js-md5": "^0.7.3",
+    "nprogress": "latest",
+    "vue": "^2.6.11",
+    "vue-axios": "^2.1.5",
+    "vue-gemini-scrollbar": "^2.0.1",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-plugin-router": "^4.4.6",
+    "@vue/cli-plugin-vuex": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "webpack": "^4.43.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
